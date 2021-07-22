@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir essa página em vários dispositivos ou simplesmente aumente e/ou diminua a tela do navegador</p>
+
+    <picture> <!-- O site exibirá a última linha por padrão, e irá subindo as linhas adaptando as imagens -->
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem Grande">
+
+        <!-- Ex.:
+            Carregue a imagem "foto-g.png", caso o navegador tenha uma largura abaixo ou igual à 1050px, carregue a imagem "foto-m.png", caso o navegador tenha uma largura abaixo ou igual à 750px, carregue a imagem "foto-p.png"
+         -->
+    </picture>
+</body>
+</html>

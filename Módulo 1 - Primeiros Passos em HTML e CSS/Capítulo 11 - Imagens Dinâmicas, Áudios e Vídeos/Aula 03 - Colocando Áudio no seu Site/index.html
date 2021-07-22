@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamo reproduzir áudios em HTML5</p>
+    <!-- Esta é a primeira maneira de você colocar áudio no seu site
+        <audio src="audio/happy-mistake.mp3" controls autoplay></audio>
+     -->
+
+     <audio controls preload="none">
+         <!-- Ele começa de cima para baixo, se obtiver sucesso ele para de "ir" para as linhas de baixo -->
+         <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+         <source src="audio/happy-mistake.mp3" type="audio/mpeg">
+         <p>Não foi possível carregar seu arquivo de áudio, tente baixar <a href="audio/guanacast-33.mp3">AQUI</a></p>
+     </audio>
+</body>
+</html>

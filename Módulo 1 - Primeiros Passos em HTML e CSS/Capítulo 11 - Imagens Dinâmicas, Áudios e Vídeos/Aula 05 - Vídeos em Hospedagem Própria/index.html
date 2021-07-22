@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Incorporando Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no próprio servidor</p>
+
+    <!-- Podemos incorporar vídeos simplesmente colocando a tag <video> 
+        <video src="videos/meu-video.mp4" width="500px" controls></video>
+     -->
+
+     <video width="500" poster="images/limoes-capa.png" preload="none" controls>
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.m4v" type="video/mp4">
+        <source src="videos/meu-video.webm" type="video/webm">
+        <source src="videos/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com vídeos</p>
+     </video>
+</body>
+</html>
